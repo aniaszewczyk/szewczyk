@@ -1,12 +1,10 @@
-global a, b, c, d
-a = 180
-b = 0
-c = 1
-d = -1
-
-
 def setup():
     size(360,360)
+    global a, b, c, d # jeżeli są w tej funkcji - mamy pewność, że zainicjalizują się przy tworzeniu okna
+    a = 180
+    b = 0
+    c = 1
+    d = -1
     
 def draw():
     background(0)
@@ -32,6 +30,9 @@ def draw():
         fill(100)
         b = 0
         d = -d
+        #oryginalnie napisane
     
     if mousePressed:
         exit()
+# zmiana koloru miała być z wykorzystaniem kolekcji, bo mieliście je powtórzyć
+# 1,5p
