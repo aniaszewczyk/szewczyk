@@ -3,7 +3,7 @@ add_library('pdf')
 
 def setup():
     global img,img1
-    size(400,400) 
+    size(400,400) # to nie są proporcje zdjęcia dokumentowego
     img = loadImage("zdjecie.png") 
     img1 = loadImage("wasy.png")
     beginRecord(PDF, "outzdjecie.pdf") 
@@ -15,10 +15,12 @@ def setup():
 def draw():
     global img,img1
     image(img, 0,0, height, width)
-    image(img1,130,180,height/3,width/3)
+    image(img1,130,180,height/3,width/3) # miał być wybór elementu
     
     endRecord() 
 
 
 def mousePressed():
     exit()
+    
+# 1,5p
