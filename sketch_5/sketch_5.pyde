@@ -1,4 +1,4 @@
-class kwadrat():
+class Kwadrat(): # klasy zwyczajowo zapisujemy wielką literą
     def __init__(self, x, y, w):
         self.x = x
         self.y = y
@@ -19,8 +19,8 @@ class kwadrat():
 def setup():
     size(400,400)
     global k1, k2
-    k1 = kwadrat(150,150, 50)
-    k2 = kwadrat(200,200, 50)
+    k1 = Kwadrat(150,150, 50)
+    k2 = Kwadrat(200,200, 50)
     
 def draw():
     background(255)
@@ -28,6 +28,8 @@ def draw():
     k2.na_ekranie()
     k1.porusza_sie()
     
+# żeby oba albo więcej kwadrató się poruszało, zrobiłąbym wartości kierunkowe atrybutamiklasy zamist instancji
+# jeżeli ten ruch ma się różnić, to dodałabym jakieś wartości typu prędkość, czy aktywacja już w metodach, czy atrybutach poszczególnych figur
 def keyPressed():
     if keyCode == UP:
         k1.up = 1
@@ -47,3 +49,5 @@ def keyReleased():
         k1.left = 0
     if keyCode == RIGHT:
         k1.right = 0
+        
+# 2pkt
