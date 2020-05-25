@@ -1,4 +1,4 @@
-class Kolo():
+class Kolo(): # mieliście skorzystać z mojej klasy, ale ta jest analogiczna, więc uznam
     def __init__(self, wielkosc):
         self.wielkosc = wielkosc
     def sketch(self, x, y):
@@ -6,7 +6,7 @@ class Kolo():
         self.y = y
         circle(self.x, self.y,self.wielkosc)
 
-class Kolo2(Kolo):
+class KoloKolor(Kolo): # nadawajcie adekwatne nazwy, bo a, b, c i 1, 2, 3 na prawdę nie ułatwiają później czytania kodu i połąpania się w nim wam
     def czerwonekolo(self, x, y):
         fill(255,0,0)
         Kolo.sketch(self, x, y)
@@ -23,9 +23,11 @@ def setup():
     background(0)
     kolo = Kolo(50)
     kolo.sketch(200, 300) 
-    kolo = Kolo2(120)
+    kolo = KoloKolor(120)
     kolo.czerwonekolo(300, 200)
-    kolo = Kolo2(40)
+    kolo = KoloKolor(40)
     kolo.zielonekolo(50,100)
-    kolo = Kolo2(60)
+    kolo = KoloKolor(60)
     kolo.niebieskiekolo(400,370)
+    
+# 1, 75pkt
