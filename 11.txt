@@ -1,0 +1,13 @@
+PIZZERIA
+
+kelner: Jaką pizzę podać?
+klient: Margarite.
+
+kelner: To wszystko?
+klient: Jednak nie. Margharite z salami.
+
+
+kelner: Jakiś sos do tego?
+klient: Margharite z salami, oliwkami i sos czosnkowy.
+
+WZORZEC: dekorator
