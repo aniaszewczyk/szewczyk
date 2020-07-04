@@ -54,3 +54,6 @@ def mouseClicked():
         pet.speak()
         if isinstance(pet, Dog):
             pet.gimmePaw()
+
+# brakuje nadpisania odejmowania
+# 1,25pkt
