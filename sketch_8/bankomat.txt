@@ -1,3 +1,7 @@
 Nazwa klasy - Bankomat
 atrybuty - kod pin, dostępne środki
 metody - wpłać pieniądze, wypłać pieniądze, sprawdź stan konta
+
+0,5pkt/1,5pkt za tę część
+
+przykładny byłby podział na klasy: bankomat, bank, karta; gdzie bank przechowywałby inforamcje o kliencie, bankomat pośredniczył i przechowywał fizyczna gotówkę, karta przechowywała PIN i dane konta, które przekazuje bankomat do bazy banku (np. by sprawdzić, czy saldo pozwala na wypłatę)

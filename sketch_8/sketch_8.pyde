@@ -59,3 +59,5 @@ def mouseClicked():
         if mouseY >40 and mouseY <60:
             library.addBook(Madzia.returnBook())
             library.addBook(Anna.returnBook())
+            
+0,5/0,5 pkt za tę część
