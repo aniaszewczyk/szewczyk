@@ -11,3 +11,5 @@ kelner: Jakiś sos do tego?
 klient: Margharite z salami, oliwkami i sos czosnkowy.
 
 WZORZEC: dekorator
+
+1,75pkt
